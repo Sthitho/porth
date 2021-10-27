@@ -38,7 +38,7 @@ def simulate_program(program):
         elif op[0] == OP_PLUS:
             a = stack.pop()
             b = stack.pop()
-            stack.append(a + b)
+            stack.append(a + b)  # LIFO
         elif op[0] == OP_MINUS:
             a = stack.pop()
             b = stack.pop()
